@@ -1,0 +1,13 @@
+> RAL$Perlakuan=as.factor(RAL$Perlakuan)
+> anova<-aov(Variable~Perlakuan,data=RAL)
+> summary(anova)
+            Df  Sum Sq Mean Sq
+Perlakuan    3 0.29667 0.09889
+Residuals    8 0.09333 0.01167
+            F value  Pr(>F)   
+Perlakuan     8.476 0.00726 **
+Residuals                     
+---
+Signif. codes:  
+  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05
+  ‘.’ 0.1 ‘ ’ 1
